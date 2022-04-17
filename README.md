@@ -1,2 +1,2 @@
-# Afghan-girl-game
+# -girl-game
  Mitt första spel.
