@@ -9,7 +9,7 @@ public class CameraMovment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(cameraSpeed * Time.deltaTime, 0, 0);
+        transform.position += new Vector3(cameraSpeed * Time.deltaTime, 0, 0);            // Denna kod gör att kamera position ändras i x kordinater så det flyttar sig åt höger// 
         
     }
 }

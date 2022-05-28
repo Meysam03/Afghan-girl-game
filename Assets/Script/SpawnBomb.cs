@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnBomb : MonoBehaviour
 {
     public GameObject obstacle;
-    public float maxX;
+    public float maxX;                          // Dessa 4 variabler behövs eftersom Jag vill att bomb ska spawna inom max och minimum området för varje axel//
     public float minX;
     public float maxY;
     public float minY;
@@ -14,10 +14,9 @@ public class SpawnBomb : MonoBehaviour
 
 
 
-    // Update is called once per frame
     void Update()
     {
-        if (Time.time > spawnTime)   
+        if (Time.time > spawnTime)                     
         {
             spawn();
             spawnTime = Time.time + timeBetweenSpawn;
@@ -26,10 +25,10 @@ public class SpawnBomb : MonoBehaviour
 
     void spawn()
     {
-        float randomX = Random.Range(minX, maxX);
-        float randomY = Random.Range(minY, maxY);
-
-        Instantiate(obstacle, transform.position + new Vector3(randomX, randomY, 0), transform.rotation);
+        float randomX = Random.Range(minX, maxX);  // anledningen till varför jag använder koden  är att jag vill inte bomb ska spawna i samma position// 
+        float randomY = Random.Range(minY, maxY);     //  Jag  gör samma sak för y axel.
+        // Positionen jag vill att bomben ska visas kommer vara random och 0 på z kordinater eftersom jag kommer inte använda den.// 
+        Instantiate(obstacle, transform.position + new Vector3(randomX, randomY, 0), transform.rotation);   
 
     }
 }

@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 1419579130}
   - component: {fileID: 1419579132}
   m_Layer: 5
-  m_Name: "pl\xE4ng system"
+  m_Name: Score text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
